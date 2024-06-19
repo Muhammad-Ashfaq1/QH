@@ -12,7 +12,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-4 m-t-lg text-blue">
-                                        <img width="150" src="/assets/images/logo.png" alt="Tungsram logo"
+                                        <img width="150" src="{{ asset('assets/images/logo.png') }}" alt="Tungsram logo"
                                              class="m-b-md">
 
                                         <br>
@@ -22,19 +22,19 @@
                                             Connect with Tungsram:
 
                                             <div class="text-red footer-social-icons">
-                                                <a target="_blank" href=""><img src="/assets/images/facebook.svg"
+                                                <a target="_blank" href=""><img src="{{ asset('assets/images/facebook.svg') }}"
                                                                                 style=""></a>
-                                                <a target="_blank" href=""><img src="/assets/images/linkedin.svg"
+                                                <a target="_blank" href=""><img src="{{ asset('assets/images/linkedin.svg') }}"
                                                                                 style=""></a>
-                                                <a target="_blank" href=""><img src="/assets/images/instagram.svg"
+                                                <a target="_blank" href=""><img src="{{ asset('assets/images/instagram.svg') }}"
                                                                                 style=""></a>
-                                                <a target="_blank" href=""><img src="/assets/images/twitter.svg"
+                                                <a target="_blank" href=""><img src="{{ asset('assets/images/twitter.svg') }}"
                                                                                 style=""></a>
-                                                <a target="_blank" href=""><img src="/assets/images/youtube.svg"
+                                                <a target="_blank" href=""><img src="{{ asset('assets/images/youtube.svg') }}"
                                                                                 style=""></a>
                                             </div>
                                         </div>
-                                        <img width="150" src="/assets/images/brand.svg" alt="Tungsram logo"
+                                        <img width="150" src="{{ asset('assets/images/brand.svg') }}" alt="Tungsram logo"
                                              class="m-b-md m-t-sm mb-main-logo">
                                     </div>
 
