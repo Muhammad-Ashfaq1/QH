@@ -48,7 +48,7 @@
                                         <a href="javascript:void(0)">News</a>
                                     </li>
                                     <li class="web-link-li">
-                                        <a href="{{ route('about.us') }}l">About</a>
+                                        <a href="{{ route('about.us') }}">About</a>
                                     </li>
                                     <li class="web-link-li">
                                         <a href="{{ route('contact.us') }}">Contact</a>
