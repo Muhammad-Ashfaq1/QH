@@ -101,7 +101,7 @@
     <!-- =============================================
     =            shine         =
     =============================================  -->
-    <section class="shine-wrapper" id="shine">
+    <!-- <section class="shine-wrapper" id="shine">
         <div class="container-fluid">
             <div class="row align-items-center justify-content-center max-width mx-auto gap-5">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -119,7 +119,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!-- =============================================
     =            shine  End       =
@@ -129,7 +129,7 @@
     <!-- =============================================
     =           category         =
     =============================================  -->
-    <section class="category">
+    <!-- <section class="category">
         <div class="container-fluid p-0">
             <div class="row align-items-center max-width mx-auto">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -238,7 +238,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- =============================================
     =           category End        =
     =============================================  -->
@@ -246,7 +246,7 @@
     <!-- =============================================
     =           news         =
     =============================================  -->
-    <section class="news">
+    <!-- <section class="news">
         <div class="container-fluid p-0">
             <div class="row align-items-center max-width mx-auto">
                 <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
@@ -411,7 +411,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
     <!-- =============================================
     =           news End        =
     =============================================  -->

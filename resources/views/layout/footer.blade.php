@@ -1,100 +1,98 @@
-<!-- =============================================
-=           Footer          =
-=============================================  -->
-
-<section class="footer">
-    <div class="container-fluid">
-        <div class="row align-items-start max-width mx-auto">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                <div class="container-fluid">
-                    <div class="content-wrapper">
-                        <div class="main-footer">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-sm-4 m-t-lg text-blue">
-                                        <img width="150" src="{{ asset('assets/images/logo.png') }}" alt="Tungsram logo"
-                                             class="m-b-md">
-
-                                        <br>
-
-                                        2024 © Copyright Tungsram Operations Kft.
-                                        <div class="m-t-md">
-                                            Connect with Tungsram:
-
-                                            <div class="text-red footer-social-icons">
-                                                <a target="_blank" href=""><img src="{{ asset('assets/images/facebook.svg') }}"
-                                                                                style=""></a>
-                                                <a target="_blank" href=""><img src="{{ asset('assets/images/linkedin.svg') }}"
-                                                                                style=""></a>
-                                                <a target="_blank" href=""><img src="{{ asset('assets/images/instagram.svg') }}"
-                                                                                style=""></a>
-                                                <a target="_blank" href=""><img src="{{ asset('assets/images/twitter.svg') }}"
-                                                                                style=""></a>
-                                                <a target="_blank" href=""><img src="{{ asset('assets/images/youtube.svg') }}"
-                                                                                style=""></a>
-                                            </div>
-                                        </div>
-                                        <img width="150" src="{{ asset('assets/images/brand.svg') }}" alt="Tungsram logo"
-                                             class="m-b-md m-t-sm mb-main-logo">
-                                    </div>
-
-                                    <div class="col-sm-2 col-xs-6 m-t-lg">
-                                        <div class="text-blue">
-                                            <div class="m-b-md">
-                                                <strong>PRODUCTS:</strong>
-                                            </div>
-
-                                            <ul class="navigation clearfix">
-                                                <li><a href="" class="transition-xs"><span>Indoor</span></a></li>
-                                                <li><a href="" class="transition-xs"><span>Outdoor</span></a></li>
-                                                <li><a href="" class="transition-xs"><span>Traditional
-                                                                lamps</span></a>
-                                                </li>
-                                                <li><a href="" class="transition-xs"><span>Industrial
-                                                                solutions</span></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-2 col-xs-6 m-t-lg">
-                                        <div class="text-blue">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-2 col-xs-6 m-t-lg">
-                                        <div class="text-blue">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-sm-2 col-xs-6 m-t-lg">
-                                        <div class="text-blue">
-                                            <div class="m-b-md">
-                                                <strong>LEGAL:</strong>
-                                            </div>
-
-                                            <ul class="navigation clearfix">
-                                                <li><a href="" class="transition-xs"><span>Imprint</span></a></li>
-                                                <li><a href="" class="transition-xs"><span>Cookie policy</span></a>
-                                                </li>
-                                                <li><a href="" class="transition-xs"><span>Terms and
-                                                                Conditions</span></a></li>
-                                                <li><a href="" class="transition-xs"><span>Privacy
-                                                                notice</span></a></li>
-                                                <li><a href="" class="transition-xs"><span>General Warranty
-                                                                Conditions</span></a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<!--information-starts-->
+<div class="information">
+    <div class="container">
+        <div class="infor-top">
+            <div class="col-md-3 col-12 infor-left">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/profile.php?id=61557463086278&mibextid=uzlsIk"><span
+                                class="fb"></span>
+                            <h6>Facebook</h6>
+                        </a></li>
+                    <li><a href="#"><span class="google"></span>
+                            <h6>Google+</h6>
+                        </a></li>
+                    <li><a
+                            href="https://www.instagram.com/orionlightingpvtltd?igsh=MTVwbGY2bG93cHh6YQ%3D%3D&utm_source=qr"><span
+                                class="insta"></span>
+                            <h6>Instagram</h6>
+                        </a></li>
+                </ul>
             </div>
+            <div class="col-md-3 col-12 infor-left">
+                <h3>Information</h3>
+                <ul>
+                    <li><a href="#">
+                            <p>Specials</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>New Products</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>Our Stores</p>
+                        </a></li>
+                    <li><a href="">
+                            <p>Contact Us</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>Top Sellers</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-12 infor-left">
+                <h3>Our Products</h3>
+                <ul>
+                    <li><a href="account.html">
+                            <p>LED Street Light</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>LED Flood Light</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>LED High Bay Light</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>LED Garden Light</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>Solar LED Street Light</p>
+                        </a></li>
+                    <li><a href="#">
+                            <p>Other Light</p>
+                        </a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-12 infor-left">
+                <h3>Orion Lighting</h3>
+                <h4>ORION LIGHTING PRIVATE LIMITED,
+                    <span>LAL BADSHAH ROAD MULTAN ROAD, KHANPUR, LAHORE</span>
+                </h4>
+                <h5>042 37510711</h5>
+                <p><a href="mailto:example@email.com" style="word-break: break-all;">Orionlightingpvtltd@gmail.com</a>
+                </p>
+            </div>
+            <div class="clearfix"></div>
         </div>
     </div>
-</section>
-<!-- =============================================
-=           Footer   End       =
-=============================================  -->
+</div>
+<!--information-end-->
+<!--footer-starts-->
+<div class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="col-md-6 col-12 footer-left">
+                <form>
+                    <input type="text" value="Enter Your Email" onfocus="this.value = '';"
+                        onblur="if (this.value == '') {this.value = 'Enter Your Email';}">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+            <div class="col-md-6 col-12 footer-right">
+                <p>© 2024 Orion Lighting Pvt. All Rights Reserved | Design by <a href="#" target="_blank">Orion Lighting
+                        Pvt</a> </p>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</div>
+<!--footer-end-->
