@@ -2,6 +2,41 @@
 
 All notable changes of the PHPUnit 11.2 release series are documented in this file using the [Keep a CHANGELOG](https://keepachangelog.com/) principles.
 
+## [11.2.8] - 2024-07-18
+
+### Fixed
+
+* [#5898](https://github.com/sebastianbergmann/phpunit/issues/5898): `Test\Passed` event is not emitted for PHPT tests
+* `--coverage-filter` CLI option could not be used multiple times
+
+## [11.2.7] - 2024-07-10
+
+### Changed
+
+* Updated dependencies (so that users that install using Composer's `--prefer-lowest` CLI option also get recent versions)
+
+### Fixed
+
+* [#5892](https://github.com/sebastianbergmann/phpunit/issues/5892): Errors during write of `phpunit.xml` are not handled correctly when `--generate-configuration` is used
+
+## [11.2.6] - 2024-07-03
+
+### Changed
+
+* [#5880](https://github.com/sebastianbergmann/phpunit/pull/5880): Add hints to CLI parameter deprecation messages
+
+## [11.2.5] - 2024-06-20
+
+### Changed
+
+* [#5877](https://github.com/sebastianbergmann/phpunit/pull/5877): Use `array_pop()` instead of `array_shift()` for processing `Test` objects in `TestSuite::run()` and optimize `TestSuite::isEmpty()`
+
+## [11.2.4] - 2024-06-20
+
+### Changed
+
+* [#5875](https://github.com/sebastianbergmann/phpunit/pull/5875): Also destruct `TestCase` objects early that use a data provider
+
 ## [11.2.3] - 2024-06-19
 
 ### Changed
@@ -37,6 +72,11 @@ All notable changes of the PHPUnit 11.2 release series are documented in this fi
 
 * [#5800](https://github.com/sebastianbergmann/phpunit/issues/5800): Support for targeting traits with `#[CoversClass]` and `#[UsesClass]` attributes
 
+[11.2.8]: https://github.com/sebastianbergmann/phpunit/compare/11.2.7...11.2.8
+[11.2.7]: https://github.com/sebastianbergmann/phpunit/compare/11.2.6...11.2.7
+[11.2.6]: https://github.com/sebastianbergmann/phpunit/compare/11.2.5...11.2.6
+[11.2.5]: https://github.com/sebastianbergmann/phpunit/compare/11.2.4...11.2.5
+[11.2.4]: https://github.com/sebastianbergmann/phpunit/compare/11.2.3...11.2.4
 [11.2.3]: https://github.com/sebastianbergmann/phpunit/compare/11.2.2...11.2.3
 [11.2.2]: https://github.com/sebastianbergmann/phpunit/compare/11.2.1...11.2.2
 [11.2.1]: https://github.com/sebastianbergmann/phpunit/compare/11.2.0...11.2.1

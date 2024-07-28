@@ -739,7 +739,7 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
      *
      * @param  string|array<array-key, string>  $value
      * @param  string|null  $key
-     * @return static<int, mixed>
+     * @return static<array-key, mixed>
      */
     public function pluck($value, $key = null)
     {
@@ -839,6 +839,17 @@ class LazyCollection implements CanBeEscapedWhenCastToString, Enumerable
     public function mergeRecursive($items)
     {
         return $this->passthru('mergeRecursive', func_get_args());
+    }
+
+    /**
+     * Multiply the items in the collection by the multiplier.
+     *
+     * @param  int  $multiplier
+     * @return static
+     */
+    public function multiply(int $multiplier)
+    {
+        return $this->passthru('multiply', func_get_args());
     }
 
     /**
