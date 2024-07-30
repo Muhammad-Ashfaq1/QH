@@ -4,8 +4,8 @@
 
 <section class="footer">
     <div class="container-fluid">
-        <div class="row align-items-start max-width mx-auto">
-            <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="row align-items-start">
+            <div class="col-md-12">
                 <div class="container-fluid">
                     <div class="content-wrapper">
                         <div class="main-footer">

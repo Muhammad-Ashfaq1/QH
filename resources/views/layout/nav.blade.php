@@ -2,22 +2,25 @@
 =          Header Start        =
 =============================================  -->
 <section class="header">
-    <div class="container-fluid p-0">
-        <div class="row align-items-center mx-auto max-width">
-            <div class="col-12">
-                <div class="web-logo container p-0 mt-3">
+        <div class="container-fluid">
+            <div class="row align-items-start">
+                <div class="col-md-12">
+                {{-- <div class="web-logo container p-0 mt-3">
                     <a href="/">
                         <img src="/assets/images/logo.png" alt="" style="width:150px;" class="img-fluid">
                     </a>
-                </div>
-                <div class="header-menu">
-                    
-                <a href="javascript:void(0)" class="navigation-toggle transition-xs soft-hide">
-                                    <i class="fa fa-bars"></i>
-                                </a>
-                    <div class="container p-0">
-                        <div class="website-menu row gx-0">
-                            <div class="web-links col-md-12 col-sm-12">
+                </div> --}}
+                <div class="header-menu d-flex      ">
+
+                    <div class="container d-flex">
+                        <div class="web-logo px-4">
+                            <a href="/">
+                                <h1>QH</h1>
+                                {{-- <img src="/assets/images/logo.png" alt="" style="width:150px;" class="img-fluid"> --}}
+                            </a>
+                        </div>
+                        <div class="website-menu row gx-0 px-4 w-75">
+                            <div class="web-links ">
                                 <ul class="web-link-ul d-flex align-items-center justify-content-start mb-0 mt-2 gap-4">
                                     <li class="web-link-li">
                                         <a href="/">Home</a>
@@ -39,15 +42,15 @@
                                                     <li><a href="{{ route('products-list') }}">LED Retrofit</a></li>
                                                 </ul>
                                             </li>
-                                            
+
                                         </ul>
                                     </li>
                                     </li>
                                     <li class="web-link-li">
-                                        <a href="{{ route('about.us') }}">About</a>
+                                        <a href="{{ route('about.us') }}">About us</a>
                                     </li>
                                     <li class="web-link-li">
-                                        <a href="{{ route('contact.us') }}">Contact</a>
+                                        <a href="{{ route('contact.us') }}">Contact us</a>
                                     </li>
                                     <div class="col-md-3 header-right">
                                         <div class="search-bar ">
@@ -56,7 +59,7 @@
                                     </div>
                                 </ul>
                             </div>
-                            
+
                             <!-- <div class="search-wrap col-sm-2">
                                 <div class="d-flex align-items-center justify-content-end gap-2">
                                     <div class="lang">
@@ -82,7 +85,11 @@
                             </div> -->
                         </div>
                     </div>
+                    <a href="javascript:void(0)" class="navigation-toggle transition-xs soft-hide">
+                        <i class="fa fa-bars"></i>
+                    </a>
                 </div>
+
             </div>
         </div>
     </div>

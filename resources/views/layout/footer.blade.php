@@ -2,7 +2,7 @@
 <div class="information">
     <div class="container">
         <div class="infor-top">
-            <div class="col-md-3 col-12 infor-left">
+            <div class="col-md-3 col-12 infor-left px-2">
                 <h3>Follow Us</h3>
                 <ul>
                     <li><a href="https://www.facebook.com/profile.php?id=61557463086278&mibextid=uzlsIk"><span
@@ -19,7 +19,7 @@
                         </a></li>
                 </ul>
             </div>
-            <div class="col-md-3 col-12 infor-left">
+            <div class="col-md-3 col-12 infor-left px-2">
                 <h3>Information</h3>
                 <ul>
                     <li><a href="#">
@@ -39,7 +39,7 @@
                         </a></li>
                 </ul>
             </div>
-            <div class="col-md-3 col-12 infor-left">
+            <div class="col-md-3 col-12 infor-left px-2">
                 <h3>Our Products</h3>
                 <ul>
                     <li><a href="account.html">
@@ -62,13 +62,13 @@
                         </a></li>
                 </ul>
             </div>
-            <div class="col-md-3 col-12 infor-left">
-                <h3>Orion Lighting</h3>
-                <h4>ORION LIGHTING PRIVATE LIMITED,
+            <div class="col-md-3 col-12 infor-left px-2">
+                <h3>QH Lighting</h3>
+                <h4>QH LIGHTING PRIVATE LIMITED,
                     <span>LAL BADSHAH ROAD MULTAN ROAD, KHANPUR, LAHORE</span>
                 </h4>
                 <h5>042 37510711</h5>
-                <p><a href="mailto:example@email.com" style="word-break: break-all;">Orionlightingpvtltd@gmail.com</a>
+                <p><a href="mailto:example@email.com" style="word-break: break-all;">Qhlightingpvtltd@gmail.com</a>
                 </p>
             </div>
             <div class="clearfix"></div>
@@ -88,7 +88,7 @@
                 </form>
             </div>
             <div class="col-md-6 col-12 footer-right">
-                <p>© 2024 Orion Lighting Pvt. All Rights Reserved | Design by <a href="#" target="_blank">Orion Lighting
+                <p>© 2024 QH Lighting Pvt. All Rights Reserved | Design by <a href="#" target="_blank">QH Lighting
                         Pvt</a> </p>
             </div>
             <div class="clearfix"></div>

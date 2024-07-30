@@ -4,14 +4,13 @@
 @include('layout.header')
 
 <body>
+    @include('layout.nav')
+    {{--content starts here--}}
+    <div class="container-fluid p-0">
+    @yield('content')
+    </div>
+    @include('layout.footer')
 
-@include('layout.nav')
-{{--content starts here--}}
-<div class="container-fluid p-0">
-@yield('content')
-</div>
-
-@include('layout.footer')
 
 
 
@@ -26,7 +25,7 @@
 <!-- js files -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    
+
 <script src="{{ asset('assets/js/script.js') }}"></script>
 @yield('javascript')
 </body>
