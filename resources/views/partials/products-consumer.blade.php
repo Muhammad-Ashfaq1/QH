@@ -2,10 +2,10 @@
 @section('content')
 
 <div class="row p-md-5 gx-0 sub-products">
-    <div class="col-lg-12 p-5">
+    <div class="col-lg-12 p-5 ">
         <h1 class="consumer-heading">Consumer</h1>
         <div class="row flex-wrap justify-content-start">
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">
@@ -15,7 +15,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">
@@ -25,7 +25,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">
@@ -35,7 +35,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">
@@ -46,7 +46,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">
@@ -56,7 +56,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">
@@ -66,7 +66,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">
@@ -76,7 +76,7 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 shadow">
                 <div class="consumer-sub-content">
                     <a href="{{ route('products-list') }}">
                         <div class="consumer-sub-img">

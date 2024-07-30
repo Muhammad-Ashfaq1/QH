@@ -4,15 +4,16 @@
 =           Banner         =
 =============================================  -->
     <section class="website-slider">
-        <div class="container-fluid p-0">
-            <div class="row max-width mx-auto align-items-center">
-                <div class="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+            <div class="container-fluid">
+                <div class="row align-items-start">
+                    <div class="col-md-12">
                     <div class="container-fluid p-0">
                         <div class="content-wrapper">
                             <!-- data-bs-ride="carousel" -->
                             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                                 <div class="carousel-inner">
                                     <div class="carousel-item stretch active" data-bs-interval="2000">
+                                        {{-- <div class="carousel-item active"> --}}
                                         <div class="carousel-overlay"></div>
                                         <img src="{{ asset('assets/images/slider-bg1.webp') }}" class="d-block w-100" alt="...">
 
