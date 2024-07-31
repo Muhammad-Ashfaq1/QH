@@ -15,7 +15,8 @@
                                     <div class="carousel-item stretch active" data-bs-interval="2000">
                                         {{-- <div class="carousel-item active"> --}}
                                         <div class="carousel-overlay"></div>
-                                        <img src="{{ asset('assets/images/slider-bg1.webp') }}" class="d-block w-100" alt="...">
+                                        {{-- <img src="{{ asset('assets/images/slider-bg1.webp') }}" class="d-block w-100" alt="..."> --}}
+                                        <img src="{{ asset('assets/images/light-lamp.jpg') }}" class="d-block w-100" alt="...">
 
                                         <div class="carousel-content">
                                             <h1 class="carousel-heading">Duros - LED HIGH-BAY</h1>
@@ -30,7 +31,8 @@
                                     </div>
                                     <div class="carousel-item stretch" data-bs-interval="2000">
                                         <div class="carousel-overlay"></div>
-                                        <img src="{{ asset('assets/images/slider-bg2.webp') }}" class="d-block w-100" alt="...">
+                                        {{-- <img src="{{ asset('assets/images/slider-bg2.webp') }}" class="d-block w-100" alt="..."> --}}
+                                        <img src="{{ asset('assets/images/led-light-b.png') }}" class="d-block w-100" alt="...">
                                         <div class="carousel-content">
                                             <h1 class="carousel-heading">New Panel range</h1>
                                             <h1 class="carousel-heading2">FIALUX-BACKLIT PANEL</h1>
@@ -45,7 +47,8 @@
                                     </div>
                                     <div class="carousel-item stretch" data-bs-interval="2000">
                                         <div class="carousel-overlay"></div>
-                                        <img src="{{ asset('assets/images/slider-bg3.webp') }}" class="d-block w-100" alt="...">
+                                        <img src="{{ asset('assets/images/bulb-light-bg.png') }}" class="d-block w-100" alt="...">
+                                        {{-- <img src="{{ asset('assets/images/bulb-slider.jifi') }}" class="d-block w-100" alt="..."> --}}
                                         <div class="carousel-content">
                                             <h1 class="carousel-heading">UV-C Sanitizer</h1>
                                             <a href="javascript:void(0)" class="carousel-btn">More detail</a>
@@ -59,7 +62,8 @@
                                     </div>
                                     <div class="carousel-item stretch" data-bs-interval="2000">
                                         <div class="carousel-overlay"></div>
-                                        <img src="{{ asset('assets/images/slider-bg4.webp') }}" class="d-block w-100" alt="...">
+                                        {{-- <img src="{{ asset('assets/images/slider-bg4.webp') }}" class="d-block w-100" alt="..."> --}}
+                                        <img src="{{ asset('assets/images/bulb-light-bg2.png') }}" class="d-block w-100" alt="...">
                                         <div class="carousel-content">
                                             <h1 class="carousel-heading">Smart Outdoor </h1>
                                             <a href="javascript:void(0)" class="carousel-btn">View video</a>

@@ -2,24 +2,24 @@
 =          Header Start        =
 =============================================  -->
 <section class="header">
-        <div class="container-fluid">
+        <div class="container-fluid p-0">
             <div class="row align-items-start">
-                <div class="col-md-12">
+                <div class="col-md-12 ">
                 {{-- <div class="web-logo container p-0 mt-3">
                     <a href="/">
                         <img src="/assets/images/logo.png" alt="" style="width:150px;" class="img-fluid">
                     </a>
                 </div> --}}
-                <div class="header-menu d-flex      ">
+                <div class="header-menu d-flex">
 
-                    <div class="container d-flex">
-                        <div class="web-logo px-4">
+                    <div class="container d-flex justify-content-between">
+                        <div class="web-logo">
                             <a href="/">
-                                <h1>QH</h1>
-                                {{-- <img src="/assets/images/logo.png" alt="" style="width:150px;" class="img-fluid"> --}}
+                                {{-- <h1 class="text-white">QH</h1> --}}
+                                <img src="/assets/images/QH-logo-remove.png" alt="" style="width:150px; padding: 15px 5px;" class="img-fluid">
                             </a>
                         </div>
-                        <div class="website-menu row gx-0 px-4 w-75">
+                        <div class="website-menu row gx-0 px-4 py-3 w-75">
                             <div class="web-links ">
                                 <ul class="web-link-ul d-flex align-items-center justify-content-start mb-0 mt-2 gap-4">
                                     <li class="web-link-li">
@@ -84,6 +84,7 @@
                                 </div>
                             </div> -->
                         </div>
+                        <div class="web-search"></div>
                     </div>
                     <a href="javascript:void(0)" class="navigation-toggle transition-xs soft-hide">
                         <i class="fa fa-bars"></i>
