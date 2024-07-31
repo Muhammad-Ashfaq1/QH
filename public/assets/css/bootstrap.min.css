@@ -826,7 +826,7 @@ progress {
     .container-md,
     .container-sm,
     .container-xl {
-        max-width: 1140px
+        max-width: 1160px
     }
 }
 
@@ -1607,7 +1607,7 @@ progress {
     }
 
     .col-lg-12 {
-        flex: 0 0 auto;
+        /* flex: 0 0 auto; */
         width: 100%
     }
 
@@ -6856,7 +6856,8 @@ fieldset:disabled .btn {
     margin-right: -100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: transform .6s ease-in-out
+    transition: transform .7s ease-in-out;
+    transition-delay: 1s, 2s;
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -6898,7 +6899,8 @@ fieldset:disabled .btn {
 .carousel-fade .active.carousel-item-start {
     z-index: 0;
     opacity: 0;
-    transition: opacity 0s 1.5s
+    /* transition: opacity 0s 2s */
+    transition: opacity 2s ease-in-out, visibility 2s ease-in-out;
 }
 
 @media (prefers-reduced-motion:reduce) {
@@ -9880,6 +9882,9 @@ fieldset:disabled .btn {
 
 .bg-gradient {
     background-image: var(--bs-gradient) !important
+}
+.bg-grey {
+    background-color: rgb(243, 247, 246);
 }
 
 .user-select-all {
