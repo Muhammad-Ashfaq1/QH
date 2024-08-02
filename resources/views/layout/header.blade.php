@@ -13,6 +13,20 @@
           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css">
 
-    <link rel="stylesheet" href="{{ asset('assets/css/bootstrap.min.css') }}" />
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assetss/css/bootstrap.min.css') }}" />
+    <link rel="stylesheet" href="{{ asset('assetss/css/style.css') }}" />
 </head>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

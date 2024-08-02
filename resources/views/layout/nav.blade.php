@@ -26,11 +26,19 @@
                                         <a href="/">Home</a>
                                     </li>
                                     <li class="web-link-li">
-                                        <a href="{{ route('products') }}">Products</a>
+                                        <a href="{{ route('product.group') }}" class="products-link">Products</a>
                                         <ul class="sub-menu">
                                             <li>
                                                 <a href="{{ route('consumer') }}">Consumer</a>
                                                 <ul class="nested-menu">
+                                                 @foreach(@$consumerCategories ?? [] as $category)
+                                        <li><a
+                                                href="{{ route('product-list', ['id' => $category->id]) }}">{{ $category->type_name }}</a>
+                                        </li>
+                                        @endforeach
+
+
+
                                                     <li><a href="{{ route('products-list') }}">LED Indoor</a></li>
                                                     <li><a href="{{ route('products-list') }}">LED Retrofit</a></li>
                                                 </ul>
@@ -38,6 +46,14 @@
                                             <li>
                                                 <a href="{{ route('professional') }}">Professional</a>
                                                 <ul class="nested-menu">
+                                                 @foreach(@$professionalCategories ?? [] as $category)
+                                        <li><a
+                                                href="{{ route('product-list', ['id' => $category->id]) }}">{{ $category->type_name }}</a>
+                                        </li>
+                                        @endforeach
+
+
+
                                                     <li><a href="{{ route('products-list') }}">LED Indoor</a></li>
                                                     <li><a href="{{ route('products-list') }}">LED Retrofit</a></li>
                                                 </ul>
@@ -50,7 +66,11 @@
                                         <a href="{{ route('about.us') }}">About us</a>
                                     </li>
                                     <li class="web-link-li">
-                                        <a href="{{ route('contact.us') }}">Contact us</a>
+                                        <a href="{{ route('contact-us.index') }}">Contact us</a>
+                                    </li>
+
+                                      <li class="web-link-li">
+                                        <a href="{{ route('support') }}">Support</a>
                                     </li>
                                     <div class="col-md-3 header-right">
                                         <div class="search-bar ">
@@ -94,6 +114,73 @@
         </div>
     </div>
 </section>
+
+
+<script src="{{ asset('assetss/js/new-script.js') }}"></script>
+<script>
+$(document).ready(function() {
+    const productsLink = $('.products-link');
+    const productDropdown = $('.product-dropdown');
+    $(document).on('click', function(event) {
+        const isClickInside = productsLink.is(event.target) || productDropdown.has(event.target)
+            .length > 0;
+        if (!isClickInside) {
+            productDropdown.removeClass('active');
+            closeAllSubmenus();
+        }
+    });
+
+    productDropdown.on('click', function(event) {
+        event.stopPropagation();
+    });
+
+    productDropdown.on('mouseenter', function() {
+        productDropdown.addClass('active');
+    });
+
+
+    productDropdown.on('mouseleave', function(event) {
+        if (!isMouseOverDropdown(event)) {
+            productDropdown.removeClass('active');
+            closeAllSubmenus();
+        }
+    });
+    // nested menu
+    const submenuItems = $('.product-dropdown .nestedMenu');
+    submenuItems.each(function() {
+        const submenu = $(this);
+        const parentItem = submenu.parent();
+        parentItem.on('mouseenter', function() {
+            submenu.css('display', 'block');
+        });
+        parentItem.on('mouseleave', function(event) {
+            if (!isMouseOverElement(event, submenu.get(0))) {
+                submenu.css('display', 'none');
+            }
+        });
+        parentItem.on('click', function(event) {
+            event
+                .stopPropagation();
+        });
+    });
+
+    function closeAllSubmenus() {
+        submenuItems.css('display', 'none');
+    }
+
+    function isMouseOverDropdown(event) {
+        return $(event.relatedTarget).is(productDropdown) || productDropdown.has(event.relatedTarget).length >
+            0;
+    }
+
+    function isMouseOverElement(event, element) {
+        return $(event.relatedTarget).is(element) || $.contains(element, event.relatedTarget);
+    }
+    $('.product-dropdown').find('li').each(function(index) {
+        $(this).css('animation-delay', (index + 1) * 0.02 + 's');
+    });
+});
+</script>
 <!-- =============================================
 =           Header End         =
 =============================================  -->

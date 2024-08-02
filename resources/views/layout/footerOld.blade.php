@@ -12,7 +12,7 @@
                             <div class="container">
                                 <div class="row">
                                     <div class="col-sm-4 m-t-lg text-blue">
-                                        <img width="150" src="{{ asset('assets/images/logo.png') }}" alt="Tungsram logo"
+                                        <img width="150" src="{{ asset('assetss/images/logo.png') }}" alt="Tungsram logo"
                                              class="m-b-md">
 
                                         <br>

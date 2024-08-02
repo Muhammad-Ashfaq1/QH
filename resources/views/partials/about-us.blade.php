@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
             <div class="col-12 col-lg-6 col-xl-5">
-                <img class="img-fluid about-img" loading="lazy" src="https://orionlightingpvtltd.com/assets/images/about.jpg" alt="About 1">
+                <img class="img-fluid about-img" loading="lazy" src="https://orionlightingpvtltd.com/assetss/images/about.jpg" alt="About 1">
             </div>
             <div class="col-12 col-lg-6 col-xl-7">
                 <div class="row justify-content-xl-center gx-0 p-3">
@@ -26,7 +26,7 @@
             <div class="col-12 col-lg-6">
                 <article class="p-3">
                     <div class="card border-0 shadow-sm">
-                        <img class="card-img-top img-fluid m-0" loading="lazy" src="https://orionlightingpvtltd.com/assets/images/vision.jpg" alt="Our Vision">
+                        <img class="card-img-top img-fluid m-0" loading="lazy" src="https://orionlightingpvtltd.com/s/images/vision.jpg" alt="Our Vision">
                         <div class="card-body border bg-white p-4">
                             <div class="entry-header mb-3">
                                 <h2 class="card-title entry-title h4 mb-0">
@@ -44,7 +44,7 @@
             <div class="col-12 col-lg-6">
                 <article class="p-3">
                     <div class="card border-0 shadow-sm">
-                        <img class="card-img-top img-fluid m-0" loading="lazy" src="https://orionlightingpvtltd.com/assets/images/mission.jpg" alt="Our Approach">
+                        <img class="card-img-top img-fluid m-0" loading="lazy" src="https://orionlightingpvtltd.com/s/images/mission.jpg" alt="Our Approach">
                         <div class="card-body border bg-white p-4">
                             <div class="entry-header mb-3">
                                 <h2 class="card-title entry-title h4 mb-0">
@@ -67,7 +67,7 @@
         <div class="container">
             <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
                 <div class="col-12 col-lg-6">
-                    <img class="img-fluid contact-img" loading="lazy" src="https://orionlightingpvtltd.com/assets/images/banner1.jpeg" alt="">
+                    <img class="img-fluid contact-img" loading="lazy" src="https://orionlightingpvtltd.com/s/images/banner1.jpeg" alt="">
                 </div>
                 <div class="col-12 col-lg-6">
                     <div class="row justify-content-xl-center gx-0 ps-3">
