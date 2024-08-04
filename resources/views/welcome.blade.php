@@ -24,7 +24,7 @@
                                         </div>
                                         <div class="carousel-bottom-arrow">
                                             <a href="#shine">
-                                                <img src="{{ asset('assets/images/icon_scroll_down.svg') }}" alt="Scroll for more">
+                                                <img src="{{ asset('assetss/images/icon_scroll_down.svg') }}" alt="Scroll for more">
                                                 <div>Scroll for more</div>
                                             </a>
                                         </div>
@@ -40,7 +40,7 @@
                                         </div>
                                         <div class="carousel-bottom-arrow">
                                             <a href="#shine">
-                                                <img src="{{ asset('assets/images/icon_scroll_down.svg') }}" alt="Scroll for more">
+                                                <img src="{{ asset('assetss/images/icon_scroll_down.svg') }}" alt="Scroll for more">
                                                 <div>Scroll for more</div>
                                             </a>
                                         </div>
@@ -55,7 +55,7 @@
                                         </div>
                                         <div class="carousel-bottom-arrow">
                                             <a href="#shine">
-                                                <img src="{{ asset('assets/images/icon_scroll_down.svg') }}" alt="Scroll for more">
+                                                <img src="{{ asset('assetss/images/icon_scroll_down.svg') }}" alt="Scroll for more">
                                                 <div>Scroll for more</div>
                                             </a>
                                         </div>
@@ -70,7 +70,7 @@
                                         </div>
                                         <div class="carousel-bottom-arrow">
                                             <a href="#shine">
-                                                <img src="{{ asset('assets/images/icon_scroll_down.svg') }}" alt="Scroll for more">
+                                                <img src="{{ asset('assetss/images/icon_scroll_down.svg') }}" alt="Scroll for more">
                                                 <div>Scroll for more</div>
                                             </a>
                                         </div>
