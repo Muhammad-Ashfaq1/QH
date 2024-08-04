@@ -8,28 +8,22 @@ $(document).ready(function() {
         if (selectedType == 1 || selectedType == 13) {
             showFields = ['#model-name-container', '#wattage-container', '#initial-lumen-container', '#stable-lumen-container', '#ra-container', '#beam-angle-container', '#life-container', '#guarantee-container', '#lamp-size-h1-container', '#lamp-size-h2-container', '#lamp-size-d-container'];
             hideFields = ['#shape-container', '#inch-container', '#d-round-container', '#d-square-container', '#cut-round-container', '#cut-square-container', '#h-container', '#lamp-size-w-container', '#lamp-size-l-container', '#lamp-size-i-container', '#lamp-size-t-container'];
-        }
-        else if (selectedType == 3) {
+        } else if (selectedType == 3) {
             showFields = ['#model-name-container', '#shape-container', '#inch-container', '#wattage-container', '#initial-lumen-container', '#stable-lumen-container', '#ra-container', '#life-container', '#guarantee-container', '#d-round-container', '#d-square-container', '#cut-round-container', '#cut-square-container', '#h-container'];
             hideFields = ['#beam-angle-container', '#lamp-size-h1-container', '#lamp-size-h2-container', '#lamp-size-d-container', '#lamp-size-w-container', '#lamp-size-l-container', '#lamp-size-i-container', '#lamp-size-t-container'];
-        }
-        else if (selectedType == 2) {
+        } else if (selectedType == 2) {
             showFields = ['#model-name-container', '#shape-container', '#inch-container', '#wattage-container', '#initial-lumen-container', '#stable-lumen-container', '#ra-container', '#life-container', '#guarantee-container', '#d-round-container', '#cut-round-container', '#cut-square-container', '#h-container'];
             hideFields = ['#beam-angle-container', '#lamp-size-h1-container', '#lamp-size-h2-container', '#lamp-size-d-container', '#lamp-size-w-container', '#lamp-size-l-container', '#lamp-size-i-container', '#lamp-size-t-container', '#d-square-container', '#cut-square-container'];
-        }
-        else if (selectedType == 7 || selectedType == 12) {
+        } else if (selectedType == 7 || selectedType == 12) {
             showFields = ['#model-name-container', '#wattage-container', '#initial-lumen-container', '#stable-lumen-container', '#ra-container', '#life-container', '#guarantee-container', '#lamp-size-l-container', '#lamp-size-w-container'];
             hideFields = ['#shape-container', '#inch-container', '#d-round-container', '#d-square-container', '#cut-round-container', '#cut-square-container', '#h-container', '#beam-angle-container', '#lamp-size-h1-container', '#lamp-size-h2-container', '#lamp-size-d-container', '#lamp-size-i-container', '#lamp-size-t-container'];
-        }
-        else if (selectedType == 15 || selectedType == 8) {
+        } else if (selectedType == 15 || selectedType == 8) {
             showFields = ['#model-name-container', '#wattage-container', '#initial-lumen-container', '#stable-lumen-container', '#ra-container', '#life-container', '#guarantee-container', '#lamp-size-i-container', '#lamp-size-l-container'];
             hideFields = ['#shape-container', '#inch-container', '#d-round-container', '#d-square-container', '#cut-round-container', '#cut-square-container', '#h-container', '#beam-angle-container', '#lamp-size-h1-container', '#lamp-size-h2-container', '#lamp-size-d-container', '#lamp-size-w-container', '#lamp-size-t-container'];
-        }
-        else if (selectedType == 12) {
+        } else if (selectedType == 12) {
             showFields = ['#model-name-container', '#wattage-container', '#initial-lumen-container', '#stable-lumen-container', '#ra-container', '#life-container', '#guarantee-container', '#lamp-size-l-container', '#lamp-size-w-container'];
             hideFields = ['#shape-container', '#inch-container', '#d-round-container', '#d-square-container', '#cut-round-container', '#cut-square-container', '#h-container', '#beam-angle-container', '#lamp-size-h1-container', '#lamp-size-h2-container', '#lamp-size-d-container', '#lamp-size-i-container', '#lamp-size-t-container'];
-        }
-        else {
+        } else {
             showFields = ['#model-name-container', '#wattage-container', '#initial-lumen-container', '#stable-lumen-container', '#ra-container', '#beam-angle-container', '#life-container', '#guarantee-container', '#lamp-size-h1-container', '#lamp-size-h2-container', '#lamp-size-d-container', '#shape-container', '#inch-container', '#d-round-container', '#d-square-container', '#cut-round-container', '#cut-square-container', '#h-container', '#lamp-size-w-container', '#lamp-size-l-container', '#lamp-size-i-container', '#lamp-size-t-container'];
         }
 
@@ -52,6 +46,7 @@ $(document).ready(function() {
     $(document).on('click', '.js-add-product', function(el) {
         $('#js-add-product-modal').modal('show');
         getAllProductType();
+
     });
 
     $('#js-product-form').validate({
@@ -59,7 +54,7 @@ $(document).ready(function() {
             event.preventDefault();
             var formData = new FormData($('#js-product-form')[0]);
             $.ajax({
-                url: '/product/add',
+                url: '/product/store',
                 type: 'POST',
                 data: formData,
                 cache: false,
@@ -83,13 +78,16 @@ $(document).ready(function() {
     });
 
     function getAllProductType() {
+
         $.ajax({
             url: '/product/get-all-product-type',
             method: 'GET',
             dataType: 'json',
             async: false,
             success: function(data) {
+
                 $('#js-product-type-name-dropdown').empty();
+
                 $('#js-product-type-name-dropdown').append('<option value="">Choose...</option>');
                 if (Array.isArray(data)) {
                     $.each(data, function(index, value) {
@@ -107,25 +105,25 @@ $(document).ready(function() {
         });
     }
 
-    $(document).on('click', '.js-delete-product', function (el) {
+    $(document).on('click', '.js-delete-product', function(el) {
         let id = $(this).data('id');
-        showDeleteAlert(function (isConfirmed) {
+        showDeleteAlert(function(isConfirmed) {
             if (isConfirmed) {
                 $.ajax({
                     url: '/product/delete/' + id,
-                    method: 'DELETE',
+                    method: 'GET',
                     async: false,
-                    beforeSend: function (xhr) {
+                    beforeSend: function(xhr) {
                         xhr.setRequestHeader('Accept', 'application/json');
                         xhr.setRequestHeader('X-CSRF-TOKEN', $('meta[name="csrf-token"]').attr('content'));
                     },
-                    success: function (response) {
+                    success: function(response) {
                         toastr.success("Product deleted successfully!");
                         $('#js-add-product-table').html(response);
                         $('#js-add-product-modal').modal('hide');
                         $('#js-product-form')[0].reset();
                     },
-                    error: function (xhr, status, error) {
+                    error: function(xhr, status, error) {
                         let errorMessage = "Error deleting the record.";
                         if (xhr.responseJSON && xhr.responseJSON.message) {
                             errorMessage = xhr.responseJSON.message;
@@ -138,10 +136,10 @@ $(document).ready(function() {
         });
     });
 
-    function showDeleteAlert(callback, message = null , title = null) {
+    function showDeleteAlert(callback, message = null, title = null) {
         Swal.fire({
-            title: title ?? "Are you sure to delete?",
-            text: message ?? "You will not be able to recover this!!",
+            title: title || "Are you sure to delete?",
+            text: message || "You will not be able to recover this!!",
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#DD6B55",
@@ -149,7 +147,7 @@ $(document).ready(function() {
             cancelButtonText: "Cancel",
             allowOutsideClick: false,
             allowEscapeKey: false
-        }).then(function (result) {
+        }).then(function(result) {
             if (result.isConfirmed) {
                 callback(true);
             } else {
@@ -212,7 +210,7 @@ $(document).ready(function() {
         submitHandler: function(form) {
             event.preventDefault();
             var formData = new FormData($('#js-product-form')[0]);
-            var url = '/product/add';
+            var url = '/product/store';
             var method = 'POST';
 
             if ($('#product-id').val()) {

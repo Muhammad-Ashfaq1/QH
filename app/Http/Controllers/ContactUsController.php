@@ -12,7 +12,8 @@ class ContactUsController extends Controller
     public function show()
 
     {
-        return view("Admin.contact-us.index");
+        $queries=ContactUs::all();
+        return view("Admin.contact-us.index",compact("queries"));
     }
       public function store(Request $request)
       {
@@ -28,6 +29,16 @@ class ContactUsController extends Controller
           }
 
 
+}
+
+public function delete(Request $request, $id)
+{
+    $warranty =  ContactUs::findOrFail($id);
+    if($warranty){
+        $warranty->delete();
+        $contact = ContactUs::orderByDesc('created_at')->get();
+        return view('admin.contact-us.data-table', compact('contact'))->render();
+    }
 }
 
 public function index()

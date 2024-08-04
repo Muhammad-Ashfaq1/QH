@@ -66,7 +66,12 @@ class ProductController extends Controller
 
     public function getAllProductType()
     {
-        return ProductType::orderBy('type_name')->get();
+        
+          
+            $data = ProductType::orderBy('type_name')->get();
+            return response()->json($data);
+      
+
     }
 
     public function store(Request $request)
@@ -75,6 +80,7 @@ class ProductController extends Controller
     
         if ($request->hasFile('image_url')) {
             $brochure = FileUploadManager::uploadFile($request->file('image_url'), 'public/images/products/');
+           dd($brochure);
             $data['image_url'] = $brochure['doc_name'];
         }
         return Product::updateOrCreate(['id' => $data['id']],$data);
@@ -125,13 +131,13 @@ class ProductController extends Controller
     public function professional()
     {
         $products = ProductType::where('product_category_id',ProductType::PROFESSIONAL_TYPE)->get();
-        return view('partials.professional', compact('products'));
+        return view('Admin.partials.professional', compact('products'));
     }
 
 
     public function products()
     {
-        return view('partials.products-consumer');
+        return view('Admin.partials.products-consumer');
     }
     public function consumer()
     {

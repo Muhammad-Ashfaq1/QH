@@ -53,6 +53,7 @@ Route::get('/single-product', function () {
 //     Route::get('/product-list/{id?}', 'productList')->name('product-list');
 
 
+
 //  });
 
 Route::controller(FrontendController::class)->prefix('Admin')->group(function(){
@@ -88,8 +89,8 @@ Route::controller(FrontendController::class)->prefix('Admin')->group(function(){
 
 //admin dashboard 
 Route::controller(App\Http\Controllers\Admin\AuthController::class)->prefix('admin')->group( function () {
-    Route::get('/logindata', 'loginForm')->name('login');
-    Route::post('/login', 'login')->name('auth.login');
+   // Route::get('/', 'loginForm')->name('login');
+    Route::post('/logindata', 'login')->name('auth.login');
     Route::get('/register', 'register')->name('register');
     Route::post('/register','register')->name('register');
     Route::get('/logout', 'logout')->name('auth.logout');
@@ -100,7 +101,7 @@ Route::controller(App\Http\Controllers\Admin\AuthController::class)->prefix('adm
 
 });
 
-Route::controller(ProductController::class)->prefix('productss')->group(function(){
+Route::controller(ProductController::class)->prefix('product')->group(function(){
    
    //  Route::get('/products', 'products')->name('products');
      Route::get('/', 'index')->name('admin.product');
@@ -114,6 +115,8 @@ Route::controller(ProductController::class)->prefix('productss')->group(function
         Route::get('/products/professional', 'professional')->name('professional');
          Route::get('/projects', 'projects')->name('projects');
         Route::get('/product-list/{id?}', 'productList')->name('product-list');
+        Route::get('get-all-product-type', 'getAllProductType')->name('product.delete');
+
  
  
  });
@@ -131,6 +134,7 @@ Route::controller(ContactUsController::class)->prefix('contact-us')->group(funct
     Route::get('/', 'index')->name('contact-us.index')->middleware('auth');
    // Route::post('/add', 'store')->name('contact-us.add');
     Route::get('/show', 'show')->name('admin.contact-us');
+    Route::get('delete/{id}', 'delete')->name('queries.delete');
 
 });
 

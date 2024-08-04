@@ -10,7 +10,7 @@
             <td>
                 <div class="action-buttons d-flex justify-content-center position-relative">
                     <div class="action-buttons-container">
-                        <button data-id="{{ @$query->id }}" class="js-delete-warranty btn btn-danger"
+                        <button data-id="{{ @$query->id }}" class="js-delete-query btn btn-danger"
                                 style="cursor: pointer">Delete</button>
                     </div>
                 </div>
@@ -18,3 +18,9 @@
         </tr>
     @endforeach
 @endif
+
+
+
+@section('extra-js')
+    <script src="{{asset('admin/assets/js/contact-us.js')}}"></script>
+@endsection 
