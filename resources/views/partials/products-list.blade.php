@@ -151,64 +151,64 @@
             </div>
         </div>
         <div class="col-sm-9" id="js-product-listing">
-            <h1 class="consumer-heading ps-3"> LED Bulbs</h1>
-            <div class="row flex-wrap justify-content-start">
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+            <h1 class="consumer-heading py-4 px-0"> LED Bulbs</h1>
+            <div class="row flex-wrap justify-content-start p-0">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 product-cards">
                     <div class="consumer-sub-content">
                         <a href="{{ route('single-product') }}">
+                            <h3 class="consumer-sub-link">A55/A60 A2B Series with 3 Watt</h3>
                             <div class="consumer-sub-img">
                                 <img src="https://orionlightingpvtltd.com/storage/images/products/1719819945_1.png"
                                     alt="">
                             </div>
-                            <h3 class="consumer-sub-link">A55/A60 A2B Series with 3 Watt</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 product-cards">
                     <div class="consumer-sub-content">
                         <a href="{{ route('single-product') }}">
+                            <h3 class="consumer-sub-link">A2B-A55-3W with 3 Watt</h3>
                             <div class="consumer-sub-img">
                                 <img src="https://orionlightingpvtltd.com/storage/images/products/1719821434_1.png"
                                     alt="">
                             </div>
-                            <h3 class="consumer-sub-link">A2B-A55-3W with 3 Watt</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 product-cards">
                     <div class="consumer-sub-content">
                         <a href="{{ route('single-product') }}">
+                            <h3 class="consumer-sub-link">A2B-A55-5W with 5 Watt</h3>
                             <div class="consumer-sub-img">
                                 <img src="https://orionlightingpvtltd.com/storage/images/products/1719821450_1.png"
                                     alt="">
                             </div>
-                            <h3 class="consumer-sub-link">A2B-A55-5W with 5 Watt</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 product-cards">
                     <div class="consumer-sub-content">
                         <a href="{{ route('single-product') }}">
+                            <h3 class="consumer-sub-link">A2B-A60-3W with 3 Watt</h3>
                             <div class="consumer-sub-img">
                                 <img src="https://orionlightingpvtltd.com/storage/images/products/1719821467_1.png"
                                     alt="">
                             </div>
-                            <h3 class="consumer-sub-link">A2B-A60-3W with 3 Watt</h3>
                         </a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6">
+                <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 product-cards">
                     <div class="consumer-sub-content">
                         <a href="{{ route('single-product') }}">
+                            <h3 class="consumer-sub-link">A2B-A60-5W with 5 Watt</h3>
                             <div class="consumer-sub-img">
                                 <img src="https://orionlightingpvtltd.com/storage/images/products/1719821496_1.png"
                                     alt="">
                             </div>
-                            <h3 class="consumer-sub-link">A2B-A60-5W with 5 Watt</h3>
                         </a>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>
