@@ -114,7 +114,7 @@
                                 <div>
                                     <h4 class="mb-3">E-Mail</h4>
                                     <p>
-                                        <a class="link-secondary text-decoration-none fs-4" href="mailto:QHlightingpvtltd@gmail.com">Orionlightingpvtltd@gmail.com</a>
+                                        <a class="link-secondary text-decoration-none fs-4" href="mailto:QHlightingpvtltd@gmail.com">QHlightingpvtltd@gmail.com</a>
                                     </p>
                                 </div>
                             </div>
