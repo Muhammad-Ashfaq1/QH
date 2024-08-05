@@ -52,6 +52,11 @@
                                     <li class="web-link-li">
                                         <a href="{{ route('contact.us') }}">Contact us</a>
                                     </li>
+
+
+                                      <li class="web-link-li">
+                                        <a href="{{ route('support') }}">Support</a>
+                                    </li>
                                     <div class="col-md-3 header-right">
                                         <div class="search-bar ">
                                             <input type="text" value="Search" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Search';}">
