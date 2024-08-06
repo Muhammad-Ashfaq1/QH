@@ -19,7 +19,7 @@
                             <a href="{{ route('products-list') }}">
                                 <h3 class="consumer-sub-link">LED Flood Lights</h3>
                                 <div class="consumer-sub-img">
-                                    <img src="https://orionlightingpvtltd.com/assets/images/professional/flood.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/professional/led-floodlight.png') }}" alt="">
                                 </div>
                             </a>
                         </div>
@@ -39,7 +39,7 @@
                             <a href="{{ route('products-list') }}">
                                 <h3 class="consumer-sub-link">LED Panel Lights</h3>
                                 <div class="consumer-sub-img">
-                                    <img src="https://orionlightingpvtltd.com/assets/images/professional/led_panel.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/professional/led-panellight.png') }}" alt="">
                                 </div>
                             </a>
                         </div>
@@ -49,7 +49,7 @@
                             <a href="{{ route('products-list') }}">
                                 <h3 class="consumer-sub-link">LED T Series Bulbs</h3>
                                 <div class="consumer-sub-img">
-                                    <img src="https://orionlightingpvtltd.com/assets/images/professional/t-shape.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/professional/led_tbulb.png') }}" alt="">
                                 </div>
                             </a>
                         </div>
@@ -69,7 +69,7 @@
                             <a href="{{ route('products-list') }}">
                                 <h3 class="consumer-sub-link">LED Tube Lights</h3>
                                 <div class="consumer-sub-img">
-                                    <img src="https://orionlightingpvtltd.com/assets/images/professional/tube_light.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/professional/led-tubelight.png') }}" alt="">
                                 </div>
                             </a>
                         </div>
@@ -89,7 +89,7 @@
                             <a href="{{ route('products-list') }}">
                                 <h3 class="consumer-sub-link">LED Solar Street Lights</h3>
                                 <div class="consumer-sub-img">
-                                    <img src="https://orionlightingpvtltd.com/assets/images/professional/solar_light.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/professional/led_streetlight.jpg') }}" alt="">
                                 </div>
                             </a>
                         </div>
@@ -99,7 +99,7 @@
                             <a href="{{ route('products-list') }}">
                                 <h3 class="consumer-sub-link">LED Smart Lighting</h3>
                                 <div class="consumer-sub-img">
-                                    <img src="https://orionlightingpvtltd.com/assets/images/professional/smart.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/professional/smart_light.jpg') }}" alt="">
                                 </div>
                             </a>
                         </div>
