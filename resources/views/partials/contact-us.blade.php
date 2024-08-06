@@ -17,9 +17,10 @@
             <div class="col-12 col-lg-9">
                 <div class="bg-white border rounded shadow-sm overflow-hidden">
 
-                    <form id="js-contact-us-form23" method="POST" action="https://orionlightingpvtltd.com/contact-us/add">
+                    <form id="js-contact-us-form23" method="POST" action="{{route('contact-us.add')}}">
                         <input type="hidden" name="_token" value="OGsm1KPmHpjl6ds8d0RBC2FKmWLeMWq8Hua359s4" autocomplete="off">                        <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
                             <div class="col-12">
+                            @csrf
                                 <label for="fullname" class="form-label">Full Name <span class="text-danger">*</span></label>
                                 <input type="text" class="form-control" id="fullname" name="name" value="" required="">
                             </div>
