@@ -32,6 +32,16 @@ return new class extends Migration
             $table->integer('cut_square')->nullable();
             $table->integer('cut_round')->nullable();
             $table->integer('h')->nullable();
+            $table->string('cut_round')->nullable()->change();
+            $table->string('cut_square')->nullable()->change();
+            $table->string('d_square')->nullable()->change();
+
+            // Adding new string columns
+            $table->string('lamp_size_w')->nullable();
+            $table->string('lamp_size_l')->nullable();
+            $table->string('lamp_size_i')->nullable();
+            $table->string('lamp_size_t')->nullable();
+            $table->string('ip_class')->nullable();
             $table->foreign('product_type_id')->references('id')->on('product_types')->onDelete('cascade')->onUpdate('cascade');
             $table->softDeletes();
             $table->string('image_url')->nullable();

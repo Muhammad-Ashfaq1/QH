@@ -21,10 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        $consumerCategories = ProductType::where('product_category_id', ProductType::CONSUMER_TYPE)->get();
-        $professionalCategories = ProductType::where('product_category_id', ProductType::PROFESSIONAL_TYPE)->get();
-
-        View::share('consumerCategories', $consumerCategories);
-        View::share('professionalCategories', $professionalCategories);
+        //
     }
 }

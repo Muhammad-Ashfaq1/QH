@@ -31,15 +31,22 @@
                                             <li>
                                                 <a href="{{ route('consumer') }}">Consumer</a>
                                                 <ul class="nested-menu">
-                                                    <li><a href="{{ route('products-list') }}">LED Indoor</a></li>
-                                                    <li><a href="{{ route('products-list') }}">LED Retrofit</a></li>
+                                                    @php
+                                                        $comsumer_tpye_products = getProductTypes(\App\Models\ProductType::CONSUMER_TYPE);
+                                                        $professional_tpye_products= getProductTypes(\App\Models\ProductType::PROFESSIONAL_TYPE);
+                                                    @endphp
+
+                                                    @foreach($comsumer_tpye_products as $product)
+                                                        <li><a href="{{ route('products-list') }}">{{ $product->type_name }}</a></li>
+                                                    @endforeach
                                                 </ul>
                                             </li>
                                             <li>
                                                 <a href="{{ route('professional') }}">Professional</a>
                                                 <ul class="nested-menu">
-                                                    <li><a href="{{ route('products-list') }}">LED Indoor</a></li>
-                                                    <li><a href="{{ route('products-list') }}">LED Retrofit</a></li>
+                                                    @foreach($professional_tpye_products as $product)
+                                                        <li><a href="{{ route('products-list') }}">{{ $product->type_name }}</a></li>
+                                                    @endforeach
                                                 </ul>
                                             </li>
 

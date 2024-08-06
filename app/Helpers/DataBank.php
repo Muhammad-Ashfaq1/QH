@@ -1,4 +1,8 @@
 <?php
+
+use App\Models\ProductType;
+use Illuminate\Support\Facades\View;
+
 if (!function_exists('getProductName')) {
     function getProductName($product_id): string
     {
@@ -9,5 +13,12 @@ if (!function_exists('getProductName')) {
             4 => 'Suspend',
             default => 'Employee Status'
         };
+    }
+}
+
+if (!function_exists('getConsumerTypeProducts')) {
+    function getProductTypes($productTypes)
+    {
+        return ProductType::where('product_category_id', $productTypes)->get();
     }
 }

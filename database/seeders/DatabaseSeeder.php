@@ -19,7 +19,7 @@ class DatabaseSeeder extends Seeder
         $admin = User::updateOrCreate([
             'email' => 'admin@qhpvt.com',
         ], [
-            'name' => 'Admin Orion',
+            'name' => 'Admin HQ',
             'password' => 'qhAdmin123$#',
         ]);
 
