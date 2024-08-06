@@ -78,7 +78,7 @@
                         <a class="dropdown-item d-block" href="#"><span class="badge badge-success float-right">11</span><i class="mdi mdi-settings m-r-5"></i> Settings</a>
                         <a class="dropdown-item" href="#"><i class="mdi mdi-lock-open-outline m-r-5"></i> Lock screen</a>
                         <div class="dropdown-divider"></div>
-                        {{-- <form action="{{ route('auth.logout') }}" method="GET"> --}}
+                         <form action="{{ route('auth.logout') }}" method="post">
                             @csrf
                             <button class="dropdown-item text-danger" type="submit"><i class="mdi mdi-power text-danger"></i> Logout</button>
                         </form>

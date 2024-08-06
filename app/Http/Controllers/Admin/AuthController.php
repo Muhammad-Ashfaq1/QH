@@ -29,7 +29,7 @@ class AuthController extends Controller
             ]);
         }
         $request->session()->regenerate();
-       // toastr()->success('Login successfully!');
+        toastr()->success('Login successfully!');
         return view('Admin.dashboard');
     }
 

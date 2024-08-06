@@ -3,11 +3,6 @@
 
 @section('contents')
 
-
-
-
-    
-
     <div class="row">
         <div class="col-12">
             <div class="card m-b-20">
@@ -62,7 +57,7 @@
                                     <div class="col-md-6 p-3">
                                         <label class="form-label required">Product Type</label>
                                         <select class="form-control solid" name="product_type_id" id="js-product-type-name-dropdown" required>
-                                           
+
                                         </select>
                                     </div>
 
@@ -337,10 +332,10 @@
     </div>
     <!-- end row -->
 
-   
 
 
-    
+
+
 @endsection
 
 
