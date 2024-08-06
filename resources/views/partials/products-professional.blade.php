@@ -29,7 +29,7 @@
                             <a href="{{ route('products-list') }}">
                                 <h3 class="consumer-sub-link">LED Highbay Lights</h3>
                                 <div class="consumer-sub-img">
-                                    <img src="https://orionlightingpvtltd.com/assets/images/professional/highbay.jpeg" alt="">
+                                    <img src="{{ asset('assets/images/professional/high_bay.png')  }}" class="d-block w-100" alt="...">
                                 </div>
                             </a>
                         </div>
@@ -104,7 +104,17 @@
                             </a>
                         </div>
                     </div>
-                                    </div>
+                    {{-- <div class="col-lg-3 col-md-3 col-sm-4 col-xs-6 col-6 product-cards">
+                        <div class="consumer-sub-content">
+                            <a href="{{ route('products-list') }}">
+                                <h3 class="consumer-sub-link">LED Smart Lighting</h3>
+                                <div class="consumer-sub-img">
+                                    <img src="{{ asset('assets/images/high_bay.png')  }}" class="d-block w-100" alt="...">
+                                </div>
+                            </a>
+                        </div>
+                    </div> --}}
+                </div>
     </div>
 </div>
 @endsection
