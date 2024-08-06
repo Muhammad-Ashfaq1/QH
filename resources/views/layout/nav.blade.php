@@ -4,7 +4,7 @@
 <section class="header">
         <div class="container-fluid p-0">
             <div class="row align-items-start">
-                <div class="col-md-12 ">
+                <div class="col-md-12 p-0">
                 {{-- <div class="web-logo container p-0 mt-3">
                     <a href="/">
                         <img src="/assets/images/logo.png" alt="" style="width:150px;" class="img-fluid">
@@ -99,7 +99,7 @@
                         <div class="web-search"></div>
                     </div>
                     <a href="javascript:void(0)" class="navigation-toggle transition-xs soft-hide">
-                        <i class="fa fa-bars"></i>
+                        <i class="fa fa-bars text-dark"></i>
                     </a>
                 </div>
 

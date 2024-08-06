@@ -20,7 +20,7 @@
                     <a href="{{ route('products-list') }}">
                         <h3 class="consumer-sub-link">LED Downlights</h3>
                         <div class="consumer-sub-img">
-                            <img src="https://orionlightingpvtltd.com/assets/images/consumer/Down_light.jpeg" alt="">
+                            <img src="{{ asset('assets/images/consumer/Led-Downlight.png') }}" alt="">
                         </div>
                     </a>
                 </div>
@@ -30,7 +30,7 @@
                     <a href="{{ route('products-list') }}">
                         <h3 class="consumer-sub-link">LED Slim Panel Lights</h3>
                         <div class="consumer-sub-img">
-                            <img src="https://orionlightingpvtltd.com/assets/images/consumer/panel_light.jpeg" alt="">
+                            <img src="{{asset('assets/images/consumer/panel_light.png')}}" alt="">
                         </div>
                     </a>
                 </div>
@@ -71,7 +71,7 @@
                     <a href="{{ route('products-list') }}">
                         <h3 class="consumer-sub-link">LED Batten Light</h3>
                         <div class="consumer-sub-img">
-                            <img src="https://orionlightingpvtltd.com/assets/images/consumer/baten.jpeg" alt="">
+                            <img src="{{ asset('assets/images/consumer/led-batten.png') }}" alt="">
                         </div>
                     </a>
                 </div>
@@ -81,7 +81,7 @@
                     <a href="{{ route('products-list') }}">
                         <h3 class="consumer-sub-link">LED Tube Light</h3>
                         <div class="consumer-sub-img">
-                            <img src="https://orionlightingpvtltd.com/assets/images/consumer/tube.jpeg" alt="">
+                            <img src="{{ asset('assets/images/consumer/led-tubelight.png') }}" alt="">
                         </div>
                     </a>
                 </div>
