@@ -31,11 +31,26 @@
                                     </div>
                                     <div class="carousel-item stretch" data-bs-interval="2000">
                                         <div class="carousel-overlay"></div>
+                                        <img src="{{ asset('assets/images/led-bulb-slider.png')  }}" class="d-block w-100" alt="...">
+                                        {{-- <img src="{{ asset('assets/images/bulb-light-bg2.png') }}" class="d-block w-100" alt="..."> --}}
+                                        <div class="carousel-content">
+                                            <h1 class="carousel-heading text-primary">LED BULB</h1>
+                                            <a href="javascript:void(0)" class="carousel-btn">More Detail</a>
+                                        </div>
+                                        <div class="carousel-bottom-arrow">
+                                            <a href="#shine">
+                                                <img src="{{ asset('assets/images/icon_scroll_down.svg') }}" alt="Scroll for more">
+                                                <div>Scroll for more</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item stretch" data-bs-interval="2000">
+                                        <div class="carousel-overlay"></div>
                                         <img src="{{ asset('assets/images/slider-bg2.webp') }}" class="d-block w-100" alt="...">
                                         {{-- <img src="{{ asset('assets/images/led-bulb.png') }}" class="d-block w-100" alt="..."> --}}
                                         <div class="carousel-content">
                                             <h1 class="carousel-heading">LED PANEL LIGHT</h1>
-                                            <h1 class="carousel-heading2">FIALUX-BACKLIT PANEL</h1>
+                                            {{-- <h1 class="carousel-heading2">FIALUX-BACKLIT PANEL</h1> --}}
                                             <a href="javascript:void(0)" class="carousel-btn">More detail</a>
                                         </div>
                                         <div class="carousel-bottom-arrow">
