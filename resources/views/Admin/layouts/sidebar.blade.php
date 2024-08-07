@@ -9,7 +9,7 @@
             <ul class="metismenu" id="side-menu">
                 <li class="menu-title">Main</li>
                 <li>
-                    <a href="" class="waves-effect">
+                    <a href="{{route('dashboard')}}" class="waves-effect">
                         <i class="mdi mdi-home"></i><span class="badge badge-primary float-right">3</span> <span> Dashboard </span>
                     </a>
                 </li>

@@ -20,13 +20,13 @@ class ProductType extends Model
         return $this->hasMany(Product::class, 'product_type_id');
     }
 
-//    public function getImageUrlAttribute($value)
-//    {
-//        if ($value) {
-//            return url(Storage::url('images/professional/' . '/' . $value));
-//        }
-//        return null;
-//    }
+   public function getImageUrlAttribute($value)
+   {
+       if ($value) {
+           return url(Storage::url('images/professional/' . $value));
+       }
+       return null;
+   }
 
 
 }

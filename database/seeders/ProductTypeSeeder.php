@@ -26,15 +26,20 @@ class ProductTypeSeeder extends Seeder
             'LED Tube Light'
         ];
 
-        $consumerImages = [
-            'led_bulb.jpeg',
-            'Down_light.jpeg',
-            'panel_light.jpeg',
-            'adjustable_panel.jpeg',
-            'surface.jpeg',
-            'COB.jpeg',
-            'baten.jpeg',
-            'tube.jpeg',
+        
+
+        
+
+
+            $consumerImages = [
+                'led_bulb.jpeg',
+                'Led-Downlight.png',
+                'panel_light.png',
+                'adjustable_panel.jpeg',
+                'surface.jpeg',
+                'COB.jpeg',
+                'baten.jpeg',
+                'led-tubelight.png'
             ];
 
         foreach ($consumerTypes as $index => $type) {
@@ -63,18 +68,18 @@ class ProductTypeSeeder extends Seeder
             'LED Smart Lighting'
         ];
 
-        $professionalImages = [
+      $professionalImages = [
             'street_light.jpeg',
-            'flood.jpeg',
+            'led-floodlight.png',
             'highbay.jpeg',
-            'led_panel.jpeg',
-            't-shape.jpeg',
+            'led-panellight.png',
+            'led_tbulb.png',
             'spot_light.jpeg',
-            'tube_light.jpeg',
+            'led-tubelight.png',
             'stadium_light.jpeg',
-            'solar_light.jpeg',
-            'smart.jpeg',
-        ];
+            'led_streetlight.jpg',
+            'smart_light.jpg'
+      ];
 
         foreach ($professionalTypes as $index => $type) {
             ProductType::updateOrCreate(
