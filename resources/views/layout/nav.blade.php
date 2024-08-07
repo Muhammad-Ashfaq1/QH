@@ -37,15 +37,15 @@
                                                     @endphp
 
                                                     @foreach($comsumer_tpye_products as $product)
-                                                        <li><a href="{{ route('products-list') }}">{{ $product->type_name }}</a></li>
+                                                        <li><a href="{{ route('product-list',['id'=>$product->id]) }}">{{ $product->type_name }}</a></li>
                                                     @endforeach
                                                 </ul>
                                             </li>
                                             <li>
-                                                <a href="{{ route('professional') }}">Professional</a>
+                                                <a href="{{ route('professional',)}}">Professional</a>
                                                 <ul class="nested-menu">
                                                     @foreach($professional_tpye_products as $product)
-                                                        <li><a href="{{ route('products-list') }}">{{ $product->type_name }}</a></li>
+                                                        <li><a href="{{ route('product-list') }}">{{ $product->type_name }}</a></li>
                                                     @endforeach
                                                 </ul>
                                             </li>

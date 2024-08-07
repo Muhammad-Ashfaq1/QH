@@ -108,21 +108,35 @@ class ProductController extends Controller
 
 
 
-    public function productList(Request $request , $id = null)
+    public function productList(Request $request , $id=null)
     {
+      
+       
+      
+ 
+       
+      
 
         if ($id) {
+           
             // Fetch products of the specific type
             $products = Product::with('productType')->where('product_type_id',$id)->get();
+           
         } else {
+
+           
             // Fetch all products
             $products = Product::with('productType')->get();
         }
 
         // If the request is AJAX, return a partial view or JSON response
         if ($request->ajax()) {
+
+           
             return view('partials.product-data-table', compact('products'))->render();
         }
+
+      
 
         // Otherwise, return the full view
         return view('partials.products-list', compact('products'));
@@ -132,7 +146,7 @@ class ProductController extends Controller
     public function professional()
     {
         $products = ProductType::where('product_category_id',ProductType::PROFESSIONAL_TYPE)->get();
-        return view('Admin.partials.professional', compact('products'));
+        return view('partials.products-professional', compact('products'));
     }
 
 
@@ -145,6 +159,17 @@ class ProductController extends Controller
         $products = ProductType::where('product_category_id',ProductType::CONSUMER_TYPE)->get();
         return view('partials.products-consumer', compact('products'));
     }
+
+    // show each product detail 
+
+    public function singleproduct($id)
+    {
+        $pro = Product::find($id);
+       
+
+        return view('partials.single-product', compact('pro'));
+    }
+    
 
 
 }

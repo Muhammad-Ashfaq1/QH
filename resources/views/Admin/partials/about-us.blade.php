@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row gy-3 gy-md-4 gy-lg-0 align-items-lg-center">
             <div class="col-12 col-lg-6 col-xl-5">
-                <img class="img-fluid about-img" loading="lazy" src="{{ asset('assets/images/image.png') }}"
+                <img class="img-fluid about-img" loading="lazy" src="{{ asset('assets/images/about2.jpg') }}"
                     alt="About 1">
             </div>
             <div class="col-12 col-lg-6 col-xl-7">
@@ -45,7 +45,7 @@ Welcome to QH Lighting, where innovation meets illumination. As pioneers in the 
             </div>
 
              <div class="col-12 col-lg-6 col-xl-5">
-                <img class="img-fluid about-img" loading="lazy" src="{{ asset('assets/images/image.png') }}"
+                <img class="img-fluid about-img" loading="lazy" src="{{ asset('assets/images/about1.jpg') }}"
                     alt="About 1">
             </div>
         </div>

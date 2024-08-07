@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
+use App\Models\Product;
 use Illuminate\Http\Request;
 
 class FrontendController extends Controller
@@ -50,10 +51,13 @@ class FrontendController extends Controller
     }
 
     
-    public function singleproducts()
-    {
-        return view('Admin.partials.single-products');
-    }
+    // public function singleproducts($id)
+    // {
+    //     $pro = Product::find($id);
+    //     return $pro;
+
+    //     return view('partials.products-list', compact('pro'));
+    // }
 
     
     public function support()

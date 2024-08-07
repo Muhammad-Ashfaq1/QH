@@ -1,4 +1,7 @@
+
+@dd($products)
 @if(!empty(@$products) && count(@$products) > 0)
+
 <h1 class="consumer-heading ps-3"> {{ @$products[0]->productType->type_name }}</h1>
 <div class="row flex-wrap justify-content-start">
     @foreach($products as $product)
@@ -6,9 +9,7 @@
         <div class="consumer-sub-content">
             <a href="{{ route('single-product', ['id' => $product->id]) }}">
                 <div class="consumer-sub-img">
-                                    <img src="{{ !empty($product->image_url) ? $product->image_url : asset('assets/images/indoor1.jpeg') }}"
-
-                    {{-- <img src="{{ !empty($product->image_url) ? $product->image_url : asset('assets/images/indoor1.jpeg') }}" --}}
+                    <img src="{{ !empty($product->image_url) ? $product->image_url : asset('assets/images/indoor1.jpeg') }}"
                         alt="">
                 </div>
                 <h3 class="consumer-sub-link">{{ $product->product_model }} with {{ $product->wattage }} Watt</h3>

@@ -1,5 +1,6 @@
 @extends('layout.master')
 @section('content')
+
 <div class="row p-md-5 gx-0">
     <div class="col-lg-12 p-5">
         <h1 class="consumer-heading">Professional</h1>

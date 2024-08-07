@@ -10,9 +10,19 @@
                         <i class="fa fa-angle-right"></i>
                     </div>
 
+                     @php
+            dd(ProductType::where('product_category_id', $productTypes)->toSql());
+
+                 @endphp
+
+                 $data= ProductType::where('product_category_id', $productTypes)->toSql;
+                 dd($data)
+               
+
                     <div id="filters1" class="inner-filters" style="display:none;">
                         <div class="form-check">
-                            @foreach($consumerCategories ?? [] as $index => $category)
+                      
+                            @foreach( $comsumer_tpye_products ?? [] as $index => $category)
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="filter1" id="filter1_{{ $index + 1 }}" onclick="fetchProducts({{ $category->id }})">
                                     <label class="form-check-label" for="filter1_{{ $index + 1 }}">
@@ -29,7 +39,7 @@
                     </div>
                     <div id="filters2" class="inner-filters" style="display:none;">
                         <div class="form-check">
-                            @foreach($professionalCategories ?? [] as $index => $category)
+                            @foreach( $professional_tpye_products ?? [] as $index => $category)
                                 <div class="form-check">
                                     <input class="form-check-input" type="radio" name="filter2" id="filter2_{{ $index + 1 }}" onclick="fetchProducts({{ $category->id }})">
                                     <label class="form-check-label" for="filter2_{{ $index + 1 }}">
@@ -57,6 +67,7 @@
         }
 
         function fetchProducts(categoryId) {
+           
             $.ajax({
                 url: "/product-list/" + categoryId,
                 {{--url: "{{ route('product-list') }}" + categoryId,--}}

@@ -19,6 +19,8 @@ if (!function_exists('getProductName')) {
 if (!function_exists('getConsumerTypeProducts')) {
     function getProductTypes($productTypes)
     {
+  
+
         return ProductType::where('product_category_id', $productTypes)->get();
     }
 }
