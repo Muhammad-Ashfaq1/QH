@@ -2,9 +2,9 @@
 =          Header Start        =
 =============================================  -->
 <section class="header">
-        <div class="container-fluid p-0">
+        <div class="container-fluid">
             <div class="row align-items-start">
-                <div class="col-md-12 p-0">
+                <div class="col-md-12">
                 {{-- <div class="web-logo container p-0 mt-3">
                     <a href="/">
                         <img src="/assets/images/logo.png" alt="" style="width:150px;" class="img-fluid">

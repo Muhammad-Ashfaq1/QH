@@ -26,9 +26,9 @@ class ProductTypeSeeder extends Seeder
             'LED Tube Light'
         ];
 
-        
 
-        
+
+
 
 
             $consumerImages = [
@@ -71,15 +71,15 @@ class ProductTypeSeeder extends Seeder
       $professionalImages = [
             'street_light.jpeg',
             'led-floodlight.png',
-            'highbay.jpeg',
+            'high_bay.png',
             'led-panellight.png',
             'led_tbulb.png',
             'spot_light.jpeg',
             'led-tubelight.png',
             'stadium_light.jpeg',
             'led_streetlight.jpg',
-            'smart_light.jpg'
-      ];
+            'smart_light.jpg',
+        ];
 
         foreach ($professionalTypes as $index => $type) {
             ProductType::updateOrCreate(
